@@ -33,7 +33,7 @@ fetch("https://api.coingecko.com/api/v3/coins/ethereum")
 
 function getCurrentTime() {
     const date = new Date()
-    document.getElementById("time").textContent = date.toLocaleTimeString("en-us", {timeStyle: "short"})
+    document.getElementById("time").textContent = date.toLocaleTimeString("en-us", {timeStyle: "long"})
 }
 
 setInterval(getCurrentTime, 1000)
